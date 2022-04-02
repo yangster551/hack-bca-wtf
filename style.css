@@ -1,35 +1,124 @@
-body {
-    font-family: Arial New;
-    background-color: rgb(27, 27, 27);
+h2 {
+    color: rgb(134, 0, 223);
 }
 
-a {
-    text-decoration: none;
-    color: rgb(207, 2, 2);
-}
-
-li {
-    margin: 10px;
-    text-align: center;
-    padding: 10px;
-}
-
-a:hover {
-    color: rgb(255, 52, 52);
-}
-
-.bigtext {
-    font-size: 25px;
+p {
+    color: rgb(207, 207, 207);
 }
 
 h5 {
-    color: rgb(207, 2, 2);
+    color: rgb(146, 146, 146);
 }
 
-h2 {
-    color: rgb(207, 2, 2);
+button {
+    height: 100%;
+    width: 100%;
 }
 
-h3 {
-    color: rgb(207, 2, 2);
+a {
+    color: rgb(151, 151, 151);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/* navigation bar */
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(41, 41, 41);
+}
+
+
+/* navigation bar links */
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* Right-aligned link */
+
+.navbar a.right {
+    float: right;
+}
+
+
+/* over */
+
+.navbar a:hover {
+    background-color: rgb(170, 109, 228);
+    color: black;
+}
+
+
+/* Column container */
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/* Sidebar/left column */
+
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: rgb(41, 41, 41);
+    padding: 20px;
+}
+
+
+/* Main column */
+
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: rgb(27, 27, 27);
+    padding: 20px;
+}
+
+
+/* images */
+
+.image {
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(41, 41, 41);
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
 }
