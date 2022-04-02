@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>unicorn</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Style the body */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(41, 41, 41);
+        }
+        /* Style the navigation bar links */
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        /* Right-aligned link */
+        
+        .navbar a.right {
+            float: right;
+        }
+        /* Change color on hover */
+        
+        .navbar a:hover {
+            background-color: rgb(170, 109, 228);
+            color: black;
+        }
+        /* Column container */
+        
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+        /* Sidebar/left column */
+        
+        .side {
+            -ms-flex: 30%;
+            flex: 30%;
+            background-color: rgb(41, 41, 41);
+            padding: 20px;
+        }
+        /* Main column */
+        
+        .main {
+            -ms-flex: 70%;
+            flex: 70%;
+            background-color: rgb(27, 27, 27);
+            padding: 20px;
+        }
+        /* images */
+        
+        .unicorn {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        /* Footer */
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: rgb(41, 41, 41);
+        }
+        
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#">Spicy Unicorns</a>
+        <a href="#">Spicier Unicorns</a>
+        <a href="#">Spiciest Unicorns</a>
+        <a href="#" class="right">Home</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2 style="color: rgb(145, 0, 212);">High quality images</h2>
+
+            <div class="unicorn" style="height:200px;">Image</div>
+            <p style="color: rgb(207, 207, 207)">Click now for more!</p>
+
+            <h3 style="color: rgb(145, 0, 212);">Trending</h3>
+
+            <div class="unicorn" style="height:60px;">Image</div><br>
+            <div class="unicorn" style="height:60px;">Image</div><br>
+            <div class="unicorn" style="height:60px;">Image</div>
+        </div>
+        <div class="main">
+            <h2 style="color: rgb(145, 0, 212);">Recents</h2>
+            <h5 style="color: rgb(207, 207, 207);"> Fresh. </h5>
+
+            <div class="unicorn" style="height:200px;">Image</div>
+            <p style="color: rgb(207, 207, 207);"> Starting to question my life </p>
+
+            <br>
+
+            <h2 style="color: rgb(145, 0, 212);">Popular</h2>
+            <h5 style="color: rgb(207, 207, 207);"> Fresher. </h5>
+            <div class="unicorn" style="height:200px;">Image</div>
+            <p style="color: rgb(207, 207, 207);"> Def questioning my life</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2 style="color: rgb(145, 0, 212);">Footer</h2>
+    </div>
+
+</body>
+
+</html>

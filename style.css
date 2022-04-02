@@ -1,0 +1,35 @@
+body {
+    font-family: Arial New;
+    background-color: rgb(27, 27, 27);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(207, 2, 2);
+}
+
+li {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+a:hover {
+    color: rgb(255, 52, 52);
+}
+
+.bigtext {
+    font-size: 25px;
+}
+
+h5 {
+    color: rgb(207, 2, 2);
+}
+
+h2 {
+    color: rgb(207, 2, 2);
+}
+
+h3 {
+    color: rgb(207, 2, 2);
+}
